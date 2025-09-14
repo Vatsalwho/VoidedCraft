@@ -1,2 +1,0 @@
-# VoidedCraft
-Store Website
