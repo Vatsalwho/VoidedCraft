@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VoidedCraft • Home</title>
+    <meta name="description" content="VoidedCraft Store • Buy ranks and see live server status." />
+    <link rel="preconnect" href="https://api.mcsrvstat.us" crossorigin />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="VoidedCraft Home">
+          <span class="brand-mark"><img src="./assets/images/voided.png" alt="VoidedCraft logo" /></span>
+          <span class="brand-name">VoidedCraft</span>
+        </a>
+        <nav class="nav">
+          <a href="./index.html" class="nav-link active">Home</a>
+          <a href="./store.html" class="nav-link">Store</a>
+          <a href="./socials.html" class="nav-link">Socials</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="--hero-image: url('./images/w.png')">
+        <div class="container hero-inner">
+          <h1 class="glow-title">Welcome to VoidedCraft</h1>
+          <p class="subtitle">Your adventure starts here. Join the server and explore!</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary btn-glow" href="./socials.html">Follow Us</a>
+            <a class="btn btn-primary btn-glow" href="./store.html">Browse Ranks</a>
+          </div>
+
+          <div class="status-card glass">
+            <div class="status-top">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span class="status" id="status-indicator" aria-live="polite">Checking status…</span>
+              <span class="spacer"></span>
+              <span class="players" id="players-count">0 / 0</span>
+            </div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Server capacity">
+              <div class="bar" id="server-progress" style="width:0%"></div>
+            </div>
+            <div class="status-bottom">
+              <div class="ip-row">
+                <code id="server-ip">play.voidedcraft.club</code>
+                <button id="copy-ip" class="btn btn-secondary btn-glow" type="button">Copy IP</button>
+              </div>
+              <div class="updated" id="last-updated">Just now</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+      </section>
+
+      <section class="features">
+        <div class="container features-grid">
+          <article class="feature">
+            <span class="icon" aria-hidden="true">🛡️</span>
+            <h3>Fair Ranks</h3>
+            <p>No pay-to-win. Simple perks with <strong>Void</strong> and <strong>Void+</strong>.</p>
+          </article>
+          <article class="feature">
+            <span class="icon" aria-hidden="true">👥</span>
+            <h3>Active Community</h3>
+            <p>Play together and join our Discord for events and updates.</p>
+          </article>
+          <article class="feature">
+            <span class="icon" aria-hidden="true">✨</span>
+            <h3>Always Improving</h3>
+            <p>Regular updates and fresh content keep the world exciting.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+        <div>© <span id="year"></span> VoidedCraft</div>
+        <div class="footer-links">
+          <a href="./socials.html">Socials</a>
+          <a href="./store.html">Store</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/app.js" defer></script>
+    <script src="./assets/fluid-motion.js" defer></script>
+  </body>
+</html>
